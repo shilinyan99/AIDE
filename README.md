@@ -2,6 +2,9 @@
 
 Official implementation of ['A Sanity Check for AI-generated Image Detection']().
 
+**[🏠[Homepage]](https://shilinyan99.github.io/AIDE/)** &emsp; **[📄[Paper]]()**
+
+
 <!-- <div align="center">
 <h1>
 <b>
