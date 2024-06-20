@@ -24,20 +24,31 @@ We conduct a sanity check on **"whether the task of AI-generated image detection
 
 We test the codes in the following environments, other versions may also be compatible:
 
-- CUDA 11.8
+- CUDA 11.3
 - Python 3.10
-- Pytorch 2.0.1
+- Pytorch 1.11.0
 
 
 ## Installation
 
+Please refer to [install.md](docs/install.md) for installation.
 
-## Model Zoo and Results
+## Dataset
 
+### Training Set
+We adopt the training set in [CNNSpot](https://github.com/peterwang512/CNNDetection) and [GenImage](https://github.com/Andrew-Zhu/GenImage)
+
+### Test Set
+The whole test set we used in our experiments can be downloaded from [AIGCDetectBenchmark](https://github.com/Ekko-zn/AIGCDetectBenchmark?tab=readme-ov-file) and [GenImage](https://github.com/Andrew-Zhu/GenImage)
+
+
+## Model Zoo
+
+Our training checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1qvUz0MgrVwG1B1ntkUVcRuYY0864jqcy?usp=sharing)
 
 ## Acknowledgement
 
-This repo is based on [ConvNeXt](https://github.com/facebookresearch/ConvNeXt-V2). We also refer to the repositories [CNNSpot](https://github.com/peterwang512/CNNDetection)、[AIGCDetectBenchmark](https://github.com/Ekko-zn/AIGCDetectBenchmark?tab=readme-ov-file) and [DNF](https://github.com/YichiCS/DNF). Thanks for their wonderful works.
+This repo is based on [ConvNeXt](https://github.com/facebookresearch/ConvNeXt-V2). We also refer to the repositories [CNNSpot](https://github.com/peterwang512/CNNDetection)、[AIGCDetectBenchmark](https://github.com/Ekko-zn/AIGCDetectBenchmark?tab=readme-ov-file)、[GenImage](https://github.com/Andrew-Zhu/GenImage) and [DNF](https://github.com/YichiCS/DNF). Thanks for their wonderful works.
 
 
 ## Contact
