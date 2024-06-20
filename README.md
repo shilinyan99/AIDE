@@ -19,7 +19,7 @@ We conduct a sanity check on **"whether the task of AI-generated image detection
 
 <p align="center"><img src="docs/network.png" width="800"/></p>
 
-## Update
+## News
 * **TODO**: Release the Chamelon dataset.
 * 🔥🔥🔥We release the code and checkpoints of AIDE.
 
