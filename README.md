@@ -32,11 +32,6 @@ We test the codes in the following environments, other versions may also be comp
 ## Installation
 
 
-## Get Started
-
-Please see [Ref-YouTube-VOS](docs/Ref-YouTube-VOS.md) and [Ref-DAVIS 2017](docs/Ref-DAVIS2017.md) for details.
-
-
 ## Model Zoo and Results
 
 
