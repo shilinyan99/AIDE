@@ -46,10 +46,10 @@ def get_args_parser():
     # Model parameters
     parser.add_argument('--model', default='AIDE', type=str, metavar='MODEL',
                         help='Name of model to train')
-    parser.add_argument('--resnet_path', default='AIDE/', type=str, metavar='MODEL',
-                        help='Name of model to train')
-    parser.add_argument('--convnext_path', default='AIDE', type=str, metavar='MODEL',
-                        help='Name of model to train')
+    parser.add_argument('--resnet_path', default=None, type=str, metavar='MODEL',
+                        help='Path of resnet model')
+    parser.add_argument('--convnext_path', default=None, type=str, metavar='MODEL',
+                        help='Path of ConvNeXt of model ')
     
     # EMA related parameters
     parser.add_argument('--model_ema', type=str2bool, default=False)
