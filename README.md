@@ -36,6 +36,11 @@ We test the codes in the following environments, other versions may also be comp
 
 Please refer to [install.md](docs/install.md) for installation.
 
+## Get Started
+
+Please see [Training.md](docs/TRAINING.md) for details.
+
+
 ## Dataset
 
 ### Training Set
