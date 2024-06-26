@@ -21,4 +21,4 @@ python -m torch.distributed.launch $DISTRIBUTED_ARGS main_finetune.py \
     --batch_size 32 \
     --blr 1e-4 \
     --epochs 20 \
-    PY_ARGS=${@:1}
+    ${PY_ARGS}
