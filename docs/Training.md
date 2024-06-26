@@ -14,13 +14,13 @@ For example, training on ProGAN, run the following command:
 
 Inference using the trained model.
 ```
-./scripts/eval.sh --resume [/path/to/progan_train] --eval True --output_dir [/path/to/output_dir]
+./scripts/eval.sh --data_path [/path/to/train_data] --eval_data_path [/path/to/eval_data] --resume [/path/to/progan_train] --eval True --output_dir [/path/to/output_dir]
 ```
 
 For example, evaluating the progan_train model, run the following command:
 
 ```
-./scripts/eval.sh --resume results/progan_train/progan_train.pth --eval True --output_dir results/progan_train
+./scripts/eval.sh --data_path dataset/progan/train --eval_data_path dataset/progan/eval --resume results/progan_train/progan_train.pth --eval True --output_dir results/progan_train
 ```
 
 
