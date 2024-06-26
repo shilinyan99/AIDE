@@ -14,27 +14,12 @@ DISTRIBUTED_ARGS="
     --master_port $MASTER_PORT
 "
 
-DATA_PATH=path/to/train
-EVAL_DATA_PATH=path/to/test
-RESNET_PATH=path/to/resnet
-CONVNEXT_PATH=path/to/convnext
-
-OUTPUT_PATH=./results/xxx
-mkdir -p $OUTPUT_PATH
+PY_ARGS=${@:1}  # Any other arguments 
 
 python -m torch.distributed.launch $DISTRIBUTED_ARGS main_finetune.py \
     --model AIDE \
-    --data_path $DATA_PATH \
-    --eval_data_path $EVAL_DATA_PATH \
-    --resnet_path $RESNET_PATH \
-    --convnext_path $CONVNEXT_PATH \
     --batch_size 32 \
     --blr 1e-4 \
     --epochs 20 \
-    --warmup_epochs 0 \
-    --weight_decay 0 \
-    --num_workers 2 \
-    --reprob 0.25 \
-    --smoothing 0.1 \
-    --output_dir $OUTPUT_PATH \
+    PY_ARGS=${@:1} \
 2>&1 | tee -a $OUTPUT_PATH/log_train.txt
