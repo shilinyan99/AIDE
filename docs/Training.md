@@ -10,7 +10,7 @@ For example, training on ProGAN, run the following command:
 ./scripts/train.sh --data_path dataset/progan/train --eval_data_path dataset/progan/eval --resnet_path pretrained_ckpts/resnet50.pth --convnext_path pretrained_ckpts/open_clip_pytorch_model.bin --output_dir results/progan_train
 ```
 
-### Inference & Evaluation
+### Inference
 
 Inference using the trained model.
 ```
