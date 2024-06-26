@@ -18,5 +18,4 @@ python -m torch.distributed.launch $DISTRIBUTED_ARGS main_finetune.py \
     --batch_size 32 \
     --blr 5e-4 \
     --epochs 5 \
-    ${PY_ARGS} \
-2>&1 | tee -a $OUTPUT_PATH/log_test.txt
+    ${PY_ARGS} 
