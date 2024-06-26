@@ -60,7 +60,7 @@ def get_args_parser():
     # Optimization parameters
     parser.add_argument('--clip_grad', type=float, default=None, metavar='NORM',
                         help='Clip gradient norm (default: None, no clipping)')
-    parser.add_argument('--weight_decay', type=float, default=0.05,
+    parser.add_argument('--weight_decay', type=float, default=0.,
                         help='weight decay (default: 0.05)')
     parser.add_argument('--lr', type=float, default=None, metavar='LR',
                         help='learning rate (absolute lr)')
@@ -69,7 +69,7 @@ def get_args_parser():
     parser.add_argument('--layer_decay', type=float, default=1.0)
     parser.add_argument('--min_lr', type=float, default=1e-6, metavar='LR',
                         help='lower lr bound for cyclic schedulers that hit 0 (1e-6)')
-    parser.add_argument('--warmup_epochs', type=int, default=20, metavar='N',
+    parser.add_argument('--warmup_epochs', type=int, default=0, metavar='N',
                         help='epochs to warmup LR, if scheduler supports')
     
     parser.add_argument('--warmup_steps', type=int, default=-1, metavar='N',
