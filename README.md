@@ -38,7 +38,7 @@ Please refer to [install.md](docs/install.md) for installation.
 
 ## Get Started
 
-Please see [Training.md](docs/TRAINING.md) for details.
+Please see [Training.md](docs/Training.md) for details.
 
 
 ## Dataset
