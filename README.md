@@ -1,8 +1,8 @@
 # A Sanity Check for AI-generated Image Detection
 
-Official implementation of ['A Sanity Check for AI-generated Image Detection']().
+Official implementation of ['A Sanity Check for AI-generated Image Detection'](https://arxiv.org/pdf/2406.19435).
 
-**[🏠[Homepage]](https://shilinyan99.github.io/AIDE/)** &emsp; **[📄[Paper]]()**
+**[🏠[Homepage]](https://shilinyan99.github.io/AIDE/)** &emsp; **[📄[Paper]](https://arxiv.org/pdf/2406.19435)**
 
 
 <!-- <div align="center">
