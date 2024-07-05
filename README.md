@@ -58,6 +58,16 @@ Our training checkpoints can be downloaded from [link](https://drive.google.com/
 
 This repo is based on [ConvNeXt](https://github.com/facebookresearch/ConvNeXt-V2). We also refer to the repositories [CNNSpot](https://github.com/peterwang512/CNNDetection)、[AIGCDetectBenchmark](https://github.com/Ekko-zn/AIGCDetectBenchmark?tab=readme-ov-file)、[GenImage](https://github.com/Andrew-Zhu/GenImage) and [DNF](https://github.com/YichiCS/DNF). Thanks for their wonderful works.
 
+## Citation
+
+```
+@article{yan2024sanity,
+  title={A Sanity Check for AI-generated Image Detection},
+  author={Yan, Shilin and Li, Ouxiang and Cai, Jiayin and Hao, Yanbin and Jiang, Xiaolong and Hu, Yao and Xie, Weidi},
+  journal={arXiv preprint arXiv:2406.19435},
+  year={2024}
+}
+```
 
 ## Contact
 If you have any question about this project, please feel free to contact tattoo.ysl@gmail.com.
