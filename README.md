@@ -18,7 +18,7 @@
   <a href='https://shilinyan99.github.io/AIDE'>
     <img src='https://img.shields.io/badge/Project-Page-pink?style=flat&logo=Google%20chrome&logoColor=pink'>
   </a>
-  <a href='https://arxiv.org/pdf/2406.19435'>
+  <a href='https://arxiv.org/abs/2406.19435'>
     <img src='https://img.shields.io/badge/Arxiv-2406.19435-A42C25?style=flat&logo=arXiv&logoColor=A42C25'>
   </a>
   <a href='https://arxiv.org/pdf/2406.19435'>
