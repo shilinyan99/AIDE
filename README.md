@@ -69,18 +69,58 @@ We conduct a sanity check on **"whether the task of AI-generated image detection
 
 We test the codes in the following environments, other versions may also be compatible:
 
-- CUDA 11.3
+- CUDA 11.8
 - Python 3.10
-- Pytorch 1.11.0
+- Pytorch 2.0.1
 
 
-## Installation
+## Setup
 
-Please refer to [install.md](docs/install.md) for installation.
+First, clone the repository locally.
+
+```
+https://github.com/shilinyan99/AIDE
+```
+
+Then, install Pytorch 2.0.1 using the conda environment.
+```
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 -c pytorch
+```
+
+Lastly, install the necessary packages and pycocotools.
+
+```
+pip install -r requirements.txt 
+```
+
 
 ## Get Started
 
-Please see [Training.md](docs/Training.md) for details.
+### Training
+
+```
+./scripts/train.sh  --data_path [/path/to/train_data] --eval_data_path [/path/to/eval_data] --resnet_path [/path/to/pretrained_resnet_path] --convnext_path [/path/to/pretrained_convnext_path] --output_dir [/path/to/output_dir] [other args]
+```
+
+For example, training on ProGAN, run the following command:
+
+```
+./scripts/train.sh --data_path dataset/progan/train --eval_data_path dataset/progan/eval --resnet_path pretrained_ckpts/resnet50.pth --convnext_path pretrained_ckpts/open_clip_pytorch_model.bin --output_dir results/progan_train
+```
+
+### Inference
+
+Inference using the trained model.
+```
+./scripts/eval.sh --data_path [/path/to/train_data] --eval_data_path [/path/to/eval_data] --resume [/path/to/progan_train] --eval True --output_dir [/path/to/output_dir]
+```
+
+For example, evaluating the progan_train model, run the following command:
+
+```
+./scripts/eval.sh --data_path dataset/progan/train --eval_data_path dataset/progan/eval --resume results/progan_train/progan_train.pth --eval True --output_dir results/progan_train
+```
+
 
 
 ## Dataset
