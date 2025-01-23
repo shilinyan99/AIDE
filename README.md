@@ -2,6 +2,14 @@
 <br>
 <h3>A Sanity Check for AI-generated Image Detection</h3>
 
+[Shilin Yan](https://scholar.google.com/citations?user=2VhjOykAAAAJ&hl=zh-CN&oi=ao)<sup>1†</sup>, Ouxiang Li<sup>1,2†</sup>, Jiayin Cai<sup>1†</sup>, [Yanbin Hao](https://scholar.google.com/citations?user=vhPSOkEAAAAJ&hl=en&oi=ao)<sup>2</sup>, [Xiaolong Jiang](https://scholar.google.com/citations?user=G0Ow8j8AAAAJ&hl=en&oi=ao)<sup>1</sup>, [Yao Hu](https://scholar.google.com/citations?user=LIu7k7wAAAAJ&hl=en)<sup>1</sup>, [Weidi Xie](https://scholar.google.com/citations?user=Vtrqj4gAAAAJ&hl=en)<sup>3‡</sup>
+
+<div class="is-size-6 publication-authors">
+  <p class="footnote">
+    <span class="footnote-symbol"><sup>†</sup></span>Equal contribution
+    <span class="footnote-symbol"><sup>‡</sup></span>Corresponding author
+  </p>
+</div>
 
 <sup>1</sup>Xiaohongshu Inc. <sup>2</sup>University of Science and Technology of China <sup>3</sup>Shanghai Jiao Tong University
 
@@ -28,6 +36,7 @@ A Sanity Check for AI-generated Image Detection
 </h1>
 </div> -->
 ## 🔥 News
+* [2025-01-23]🎉🎉🎉 AIDE is accepted by ICLR 2025.
 * [2024-12-29]🔥🔥🔥 We release the Chamelon dataset.
 * [2024-06-20]🔥🔥🔥 We release the code and checkpoints of AIDE.
 
