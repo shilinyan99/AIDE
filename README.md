@@ -24,6 +24,7 @@
   <a href='https://arxiv.org/pdf/2406.19435'>
     <img src='https://img.shields.io/badge/Paper-PDF-yellow?style=flat&logo=arXiv&logoColor=yellow'>
   </a>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=shilinyan99/AIDE" alt="visitors">
 </p>
 </div>
 
