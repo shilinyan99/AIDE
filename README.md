@@ -144,7 +144,7 @@ The whole test set we used in our experiments can be downloaded from [AIGCDetect
 
 ## Model Zoo
 
-Our training checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1qvUz0MgrVwG1B1ntkUVcRuYY0864jqcy?usp=sharing).
+Our training checkpoints can be downloaded from [link](https://drive.google.com/drive/folders/1qvUz0MgrVwG1B1ntkUVcRuYY0864jqcy?usp=sharing) and [link2](https://drive.google.com/file/d/1ZJCJmzyIrbSOROS7bKTgSm-Fe6yHsVXz/view?usp=sharing).
 
 ## Acknowledgement
 
