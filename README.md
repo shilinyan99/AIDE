@@ -44,6 +44,16 @@ A Sanity Check for AI-generated Image Detection
 
 ## 🔍 Chameleon 
 
+
+**License**:
+```
+Chameleon is only used for academic research. Commercial use in any form is prohibited.
+```
+
+🌟🌟🌟 If you need the Chameleon dataset, please send an email to **tattoo.ysl@gmail.com**. 🔥🔥🔥
+
+
+
 **Comparison of `Chameleon` with existing benchmarks.**
 
 <p align="center"><img src="docs/Chameleon.jpg" width="800"/></p>
@@ -57,13 +67,6 @@ where all images are generated from publicly available generators, such as ProGA
 
 In contrast, our **`Chameleon`** dataset in **(c)** aims to simulate real-world scenarios by collecting diverse images from online websites, where these online images are carefully adjusted by photographers and AI artists.
 
-
-**License**:
-```
-Chameleon is only used for academic research. Commercial use in any form is prohibited.
-```
-
-🌟🌟🌟 If you need the Chameleon dataset, please send an email to **tattoo.ysl@gmail.com**. 🌟
 
 
 ## 👀 Overview
