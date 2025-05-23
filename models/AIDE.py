@@ -233,7 +233,7 @@ class AIDE_Model(nn.Module):
             "convnext_xxlarge", pretrained=convnext_path
         )
 
-        self.timm_convnext_xxl = self.timm_convnext_xxl.visual.trunk
+        # self.timm_convnext_xxl = self.timm_convnext_xxl.visual.trunk
         self.timm_convnext_xxl.head.global_pool = nn.Identity()
         self.timm_convnext_xxl.head.flatten = nn.Identity()
 
