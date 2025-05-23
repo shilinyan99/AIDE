@@ -5,6 +5,7 @@ import clip
 import open_clip
 from .srm_filter_kernel import all_normalized_hpf_list
 import numpy as np
+import timm
 
 class HPF(nn.Module):
   def __init__(self):
@@ -228,22 +229,22 @@ class AIDE_Model(nn.Module):
         self.fc = Mlp(2048 + 256 , 1024, 2)
 
         print("build model with convnext_xxl")
-        self.openclip_convnext_xxl, _, _ = open_clip.create_model_and_transforms(
+        self.timm_convnext_xxl, _, _ = timm.create_model(
             "convnext_xxlarge", pretrained=convnext_path
         )
 
-        self.openclip_convnext_xxl = self.openclip_convnext_xxl.visual.trunk
-        self.openclip_convnext_xxl.head.global_pool = nn.Identity()
-        self.openclip_convnext_xxl.head.flatten = nn.Identity()
+        self.timm_convnext_xxl = self.timm_convnext_xxl.visual.trunk
+        self.timm_convnext_xxl.head.global_pool = nn.Identity()
+        self.timm_convnext_xxl.head.flatten = nn.Identity()
 
-        self.openclip_convnext_xxl.eval()
+        self.timm_convnext_xxl.eval()
         
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
         self.convnext_proj = nn.Sequential(
             nn.Linear(3072, 256),
 
         )
-        for param in self.openclip_convnext_xxl.parameters():
+        for param in self.timm_convnext_xxl.parameters():
             param.requires_grad = False
 
     
@@ -272,7 +273,7 @@ class AIDE_Model(nn.Module):
             dinov2_mean = torch.Tensor([0.485, 0.456, 0.406]).to(tokens, non_blocking=True).view(3, 1, 1)
             dinov2_std = torch.Tensor([0.229, 0.224, 0.225]).to(tokens, non_blocking=True).view(3, 1, 1)
 
-            local_convnext_image_feats = self.openclip_convnext_xxl(
+            local_convnext_image_feats = self.timm_convnext_xxl(
                 tokens * (dinov2_std / clip_std) + (dinov2_mean - clip_mean) / clip_std
             ) #[b, 3072, 8, 8]
             assert local_convnext_image_feats.size()[1:] == (3072, 8, 8)
