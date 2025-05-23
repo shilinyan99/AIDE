@@ -229,7 +229,7 @@ class AIDE_Model(nn.Module):
         self.fc = Mlp(2048 + 256 , 1024, 2)
 
         print("build model with convnext_xxl")
-        self.timm_convnext_xxl, _, _ = timm.create_model(
+        self.timm_convnext_xxl = timm.create_model(
             "convnext_xxlarge", pretrained=convnext_path
         )
 
